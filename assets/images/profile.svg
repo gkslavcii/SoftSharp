@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" preserveAspectRatio="xMidYMid slice">
+  <!-- TODO: Gerçek profil fotoğrafı eklendiğinde bu SVG yerine .jpg/.png konulabilir -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E9ECEF"/>
+      <stop offset="100%" stop-color="#F8F9FA"/>
+    </linearGradient>
+    <linearGradient id="silh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#001F3F"/>
+      <stop offset="100%" stop-color="#2C3E50"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="480" fill="url(#bg)"/>
+
+  <!-- Soluk dekoratif daireler -->
+  <circle cx="60" cy="80" r="50" fill="#001F3F" opacity="0.05"/>
+  <circle cx="340" cy="420" r="80" fill="#001F3F" opacity="0.04"/>
+
+  <!-- Silüet -->
+  <g transform="translate(200, 230)">
+    <circle cx="0" cy="-30" r="58" fill="url(#silh)"/>
+    <path d="M -110 180 Q -110 60 0 60 Q 110 60 110 180 Z" fill="url(#silh)"/>
+  </g>
+
+  <!-- Placeholder etiketi -->
+  <text x="200" y="455" font-family="Inter, sans-serif" font-size="12" fill="#6C757D" text-anchor="middle" letter-spacing="2">PROFIL FOTOGRAFI</text>
+</svg>

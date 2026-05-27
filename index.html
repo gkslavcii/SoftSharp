@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#001F3F" />
+
+  <title>Soft# | Özel Yazılım Çözümleri — ERP, POS, Satış Sistemleri</title>
+  <meta name="description" content="İşletmenize özel ERP, satış, POS, restoran ve stok yönetimi yazılımları. Hazır şablonlar değil, sizin iş süreçlerinize özel çözümler." />
+  <meta name="keywords" content="yazılım, ERP, POS, satış sistemi, restoran yazılımı, stok yönetimi, muhasebe programı, özel yazılım" />
+  <meta name="author" content="SoftSharp" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Soft# | Özel Yazılım Çözümleri" />
+  <meta property="og:description" content="ERP, POS, satış ve stok yönetimi — işletmenize özel yazılım çözümleri." />
+  <meta property="og:locale" content="tr_TR" />
+  <!-- TODO: og:url ve og:image domain alındıktan sonra eklenecek -->
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+  <!-- TODO: apple-touch-icon.png (180x180) hazırlandığında eklenebilir -->
+  <!-- <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png" /> -->
+
+  <!-- Fontlar -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/responsive.css?v=2" />
+
+  <!-- Schema.org yapısal veri -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Soft#",
+    "alternateName": "SoftSharp",
+    "description": "Özel yazılım geliştirme — ERP, POS, satış, restoran ve stok yönetimi sistemleri.",
+    "areaServed": "TR",
+    "serviceType": ["ERP yazılımı", "POS sistemi", "Satış yönetimi", "Restoran yazılımı", "Stok ve muhasebe"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============= NAVBAR ============= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand" aria-label="Soft# anasayfa">
+        <span class="brand-mark">Soft</span><span class="brand-hash">#</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Ana menü">
+        <a href="#hero" class="nav-link" data-section="hero">Ana Sayfa</a>
+        <a href="#about" class="nav-link" data-section="about">Hakkımda</a>
+        <a href="#services" class="nav-link" data-section="services">Hizmetler</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projeler</a>
+        <a href="#why" class="nav-link" data-section="why">Neden Ben</a>
+        <a href="#contact" class="nav-cta">Bana Ulaş</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============= HERO ============= -->
+    <section class="hero" id="hero">
+      <div class="hero-decor" aria-hidden="true"></div>
+      <div class="container hero-wrap">
+        <div class="hero-content">
+          <span class="eyebrow">Özel Yazılım Çözümleri</span>
+          <h1 class="hero-title">
+            İşletmenizi geleceğe<br />
+            <em>taşıyan</em> yazılımlar.
+          </h1>
+          <p class="hero-sub">
+            ERP, satış, POS, restoran ve stok yönetimi sistemleriyle iş süreçlerinizi
+            sadeleştiriyor; her işletmenin kendi temposuna göre çalışan çözümler üretiyorum.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Projelerimi İncele</a>
+            <a href="#contact" class="btn btn-ghost">Bana Ulaş</a>
+          </div>
+
+          <div class="hero-social" aria-label="Sosyal medya ve iletişim">
+            <!-- TODO: gerçek bağlantılar düzenlenecek -->
+            <a href="#contact" class="social-icon" aria-label="Telefon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.84.6 2.8.72A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+            <a href="#contact" class="social-icon" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+            </a>
+            <a href="#contact" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#contact" class="social-icon" aria-label="E-posta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-shape shape-1"></div>
+          <div class="hero-shape shape-2"></div>
+          <div class="hero-card">
+            <div class="hero-card-dot dot-r"></div>
+            <div class="hero-card-dot dot-y"></div>
+            <div class="hero-card-dot dot-g"></div>
+            <div class="hero-card-line w70"></div>
+            <div class="hero-card-line w50"></div>
+            <div class="hero-card-line w85"></div>
+            <div class="hero-card-line w40"></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Aşağı kaydır">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============= HAKKIMDA ============= -->
+    <section class="section about" id="about">
+      <div class="container about-wrap">
+        <div class="about-photo">
+          <!-- TODO: gerçek profil fotoğrafı eklendiğinde aşağıdaki SVG değiştirilecek -->
+          <img src="assets/images/profile.svg" alt="SoftSharp profil görseli" />
+          <div class="about-photo-stamp">Merhaba <span>👋</span></div>
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow">Kimim Ben?</span>
+          <h2 class="section-title">Merhaba, ben <em>Soft#</em>.</h2>
+
+          <p>
+            On yılı aşkın süredir işletmeler için yazılım geliştiriyorum. ERP, POS,
+            satış ve stok yönetimi gibi alanlarda; küçük bir kafenin sipariş ekranından,
+            zincir mağazaların raporlama altyapısına kadar pek çok sistem kurdum.
+          </p>
+          <p>
+            İşim hazır şablon sunmak değil, sizinle konuşmak, süreçlerinizi anlamak ve
+            <em>tam</em> ihtiyacınız olan şeyi yazmak. Çünkü her işletmenin ritmi farklı —
+            yazılımın da o ritme uyması gerekir.
+          </p>
+          <p>
+            Karmaşık görünen sistemleri sade tutmaya, raporları gerçekten kullanılabilir
+            yapmaya ve teknik olmayan ekiplerin de rahatça öğrenebileceği arayüzler
+            kurmaya özen gösteriyorum.
+          </p>
+
+          <div class="badges">
+            <span class="badge">ERP Çözümleri</span>
+            <span class="badge">Satış Sistemleri</span>
+            <span class="badge">POS</span>
+            <span class="badge">Restoran Yazılımı</span>
+            <span class="badge">Stok & Muhasebe</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= HİZMETLER ============= -->
+    <section class="section services" id="services">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Hizmetler</span>
+          <h2 class="section-title">Sunduğum çözümler</h2>
+          <p class="section-lead">
+            Her biri farklı bir işletme ihtiyacından doğmuş, sahada test edilmiş çözümler.
+            Aşağıdaki başlıkların hepsi sizin için <em>uyarlanabilir</em>.
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="card-title">ERP Sistemleri</h3>
+            <p class="card-desc">
+              İşletmenizin tüm süreçlerini tek platformdan yönetin. Üretimden satışa,
+              finanstan insan kaynaklarına kadar entegre, ölçeklenebilir çözümler.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+            </div>
+            <h3 class="card-title">Satış Yönetimi</h3>
+            <p class="card-desc">
+              Müşteri ilişkilerinden sipariş takibine, teklif yönetiminden satış raporlarına
+              uzanan uçtan uca satış sistemleri.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
+            <h3 class="card-title">POS Sistemleri</h3>
+            <p class="card-desc">
+              Perakende satış noktaları için hızlı, dayanıklı ve kullanıcı dostu kasa
+              yazılımları. Stok ve muhasebe ile tam entegre.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3 class="card-title">Restoran Yönetimi</h3>
+            <p class="card-desc">
+              Sipariş, mutfak ekranı, masa takibi, adisyon ve raporlama —
+              restoranınızı uçtan uca dijitalleştirin.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8-4-8 4 8 4 8-4z"/><path d="M4 12l8 4 8-4"/><path d="M4 17l8 4 8-4"/></svg>
+            </div>
+            <h3 class="card-title">Stok & Muhasebe</h3>
+            <p class="card-desc">
+              Gerçek zamanlı stok takibi, otomatik muhasebe entegrasyonu ve karar
+              verebileceğiniz netlikte finansal raporlama.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="card-title">Özel Geliştirme</h3>
+            <p class="card-desc">
+              Yukarıdakilerin dışındaki ihtiyaçlarınız için sıfırdan, işinize özel
+              yazılım geliştirme. Konuşalım, çözelim.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= PROJELER ============= -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Portfolyo</span>
+          <h2 class="section-title">Geliştirdiğim sistemler</h2>
+          <p class="section-lead">
+            Her biri gerçek bir işletme için, gerçek bir ihtiyaca çözüm olarak yazıldı.
+            Detayları görmek için bir projeye tıklayın.
+          </p>
+        </header>
+
+        <div class="project-grid">
+          <article class="project-card" data-project="erp">
+            <div class="project-thumb">
+              <img src="assets/images/projects/erp-1.svg" alt="ERP sistemi panel görseli" loading="lazy" />
+              <span class="project-tag">ERP</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">Üretim ERP Paneli</h3>
+              <p class="project-desc">
+                Orta ölçekli bir üretim firması için stok, satınalma, maliyet ve müşteri
+                modülleri içeren tek panelden yönetilebilen ERP.
+              </p>
+              <div class="project-tech">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+              <button class="project-link" type="button">Projeyi İncele →</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="pos">
+            <div class="project-thumb">
+              <img src="assets/images/projects/pos-1.svg" alt="POS kasa ekranı görseli" loading="lazy" />
+              <span class="project-tag">POS</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">Hızlı POS Kasa</h3>
+              <p class="project-desc">
+                Yoğun saatlerde bile sekme/aksaklık olmayan, dokunmatik ekrana göre
+                optimize edilmiş, ofline çalışabilen kasa yazılımı.
+              </p>
+              <div class="project-tech">
+                <span>Electron</span><span>SQLite</span><span>Vue</span>
+              </div>
+              <button class="project-link" type="button">Projeyi İncele →</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="resto">
+            <div class="project-thumb">
+              <img src="assets/images/projects/resto-1.svg" alt="Restoran adisyon görseli" loading="lazy" />
+              <span class="project-tag">Restoran</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">Restoran Adisyon & Mutfak</h3>
+              <p class="project-desc">
+                Masa takibi, mutfak ekranı ve garson tabletleri ile entegre çalışan,
+                küçük zincirler için ölçeklenebilen sistem.
+              </p>
+              <div class="project-tech">
+                <span>React Native</span><span>Node.js</span><span>WebSocket</span>
+              </div>
+              <button class="project-link" type="button">Projeyi İncele →</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-project="stok">
+            <div class="project-thumb">
+              <img src="assets/images/projects/stok-1.svg" alt="Stok yönetimi raporu görseli" loading="lazy" />
+              <span class="project-tag">Stok</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">Gerçek Zamanlı Stok Takibi</h3>
+              <p class="project-desc">
+                Çoklu depo, barkod okuyucu desteği ve düşük stok uyarılarıyla, hata
+                payını minimuma indiren stok yönetim sistemi.
+              </p>
+              <div class="project-tech">
+                <span>Next.js</span><span>Prisma</span><span>PostgreSQL</span>
+              </div>
+              <button class="project-link" type="button">Projeyi İncele →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= NEDEN BEN ============= -->
+    <section class="section why" id="why">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Neden Ben?</span>
+          <h2 class="section-title">Farkı yaratan birkaç şey</h2>
+        </header>
+
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+            </div>
+            <h3>Kişiselleştirilmiş Çözümler</h3>
+            <p>
+              Hazır şablon yerine sizin işinize özel yazılımlar geliştiriyorum.
+              Her detay konuşularak kararlaştırılır.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Sürekli Destek</h3>
+            <p>
+              Teslimle bitmiyor. Uzaktan erişim, hızlı dönüş ve uzun vadeli iş
+              ortaklığı — sorun çıktığında yalnız kalmayın.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Ölçeklenebilirlik</h3>
+            <p>
+              Küçük bir işletmeden büyüğe geçerken sistemleriniz sizinle birlikte
+              büyür. Mimari, başından sonu düşünülerek kurulur.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Güvenlik</h3>
+            <p>
+              SSL, modern şifreleme ve düzenli yedekleme. Verileriniz hem sizin hem
+              de müşterinizin güvendiği yerde durur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= İLETİŞİM ============= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-text">
+            <span class="eyebrow light">İletişim</span>
+            <h2 class="section-title light">Bir kahve içip<br />konuşalım mı?</h2>
+            <p class="contact-lead">
+              Projeniz fikir aşamasında olsun ya da çoktan başlamış — bir mesaj atın,
+              size dönerim. İlk görüşme her zaman ücretsizdir.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <!-- TODO: gerçek telefon/whatsapp/instagram/eposta bilgileriyle değiştirilecek -->
+            <a href="tel:+900000000000" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.84.6 2.8.72A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-body">
+                <span class="contact-label">Telefon</span>
+                <span class="contact-value">+90 000 000 00 00</span>
+              </div>
+              <span class="contact-action">Hemen Ara →</span>
+            </a>
+
+            <a href="https://wa.me/900000000000?text=Merhaba%2C%20yaz%C4%B1l%C4%B1m%20hizmetleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+              </div>
+              <div class="contact-body">
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">+90 000 000 00 00</span>
+              </div>
+              <span class="contact-action">WhatsApp'tan Yaz →</span>
+            </a>
+
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div class="contact-body">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">@softsharp</span>
+              </div>
+              <span class="contact-action">Takip Et →</span>
+            </a>
+
+            <a href="mailto:info@softsharp.com?subject=Yaz%C4%B1l%C4%B1m%20Hizmetleri%20Hakk%C4%B1nda" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-body">
+                <span class="contact-label">E-posta</span>
+                <span class="contact-value">info@softsharp.com</span>
+              </div>
+              <span class="contact-action">Mail Gönder →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <span class="brand">
+          <span class="brand-mark">Soft</span><span class="brand-hash">#</span>
+        </span>
+        <p>Özel yazılım çözümleri — işletmenize özel, sade ve dayanıklı.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer menü">
+        <a href="#hero">Ana Sayfa</a>
+        <a href="#about">Hakkımda</a>
+        <a href="#services">Hizmetler</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="#contact" aria-label="Telefon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.84.6 2.8.72A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="#contact" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24z"/></svg></a>
+        <a href="#contact" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#contact" aria-label="E-posta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 Soft#. Tüm hakları saklıdır.</span>
+        <span class="footer-made">İnce işçilikle elde kodlandı.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Yukarı çık">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" aria-label="Kapat" data-close>×</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js?v=1" defer></script>
+</body>
+</html>
