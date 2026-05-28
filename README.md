@@ -19,14 +19,8 @@ SoftSharp/
     ├── js/
     │   └── main.js         # Etkileşim (menu, modal, scroll-spy)
     └── images/
-        ├── favicon/
-        │   └── favicon.svg
-        └── projects/       # Proje placeholder görselleri
-            ├── erp-1.svg
-            ├── pos-1.svg
-            ├── resto-1.svg
-            ├── stok-1.svg
-            └── web-1.svg
+        └── favicon/
+            └── favicon.svg
 ```
 
 ## Yerel Geliştirme
@@ -82,11 +76,9 @@ Sonra: <http://localhost:5173>
 
 Aşağıdaki yerler `TODO` yorumlarıyla işaretli, sırası geldiğinde değiştirin:
 
-- [ ] `index.html` → iletişim bağlantıları (telefon, WhatsApp, Instagram, e-posta)
+- [ ] `index.html` → iletişim bağlantıları (telefon, WhatsApp, Instagram, e-posta) navbar'da TODO yorumlu
 - [ ] `index.html` → Open Graph URL & görseli (domain alındıktan sonra)
-- [ ] `assets/images/projects/*.svg` → gerçek ekran görüntüleri (16:9 oranlı, 1600x900 önerilen)
 - [ ] `assets/images/favicon/apple-touch-icon.png` → 180×180 PNG eklendiğinde `index.html`'deki ilgili satırı yorumdan çıkarın
-- [ ] `assets/js/main.js` → modal içindeki proje açıklamalarını gerçek detaylarla değiştirin
 
 ## Lisans
 
