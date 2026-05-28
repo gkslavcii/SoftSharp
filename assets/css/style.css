@@ -165,18 +165,27 @@ em { font-style: italic; color: var(--color-primary); }
   align-items: baseline;
 }
 
-.brand-hash {
-  color: var(--color-primary);
-  font-weight: 900;
-  margin-left: 2px;
-  font-size: 1.35em;
-  line-height: 0.85;
-  letter-spacing: -0.04em;
+/* "Soft" — ince, zarif serif (Playfair) */
+.brand-mark {
+  font-family: var(--font-heading);
+  color: var(--color-secondary);
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
-.brand-mark {
-  color: var(--color-secondary);
-  font-weight: 600;
+/* "#" — kalın, sans-serif (Inter Black). Playfair'in # glifi serifçe ince
+   olduğu için sans-serif ailesine geçiyoruz; kontrast burada doğuyor. */
+.brand-hash {
+  font-family: var(--font-body);
+  color: var(--color-primary);
+  font-weight: 900;
+  font-size: 1.3em;
+  margin-left: 3px;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  /* Optik düzeltme: # baseline'da biraz aşağıda durur, hizayı korumak için */
+  position: relative;
+  top: 1px;
 }
 
 .nav-links {
