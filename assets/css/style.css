@@ -167,12 +167,17 @@ em { font-style: italic; color: var(--color-primary); }
 
 .brand-hash {
   color: var(--color-primary);
-  font-weight: 700;
-  margin-left: 1px;
-  font-size: 1.05em;
+  font-weight: 900;
+  margin-left: 2px;
+  font-size: 1.35em;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
 }
 
-.brand-mark { color: var(--color-secondary); }
+.brand-mark {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
 
 .nav-links {
   display: flex;
@@ -466,62 +471,42 @@ em { font-style: italic; color: var(--color-primary); }
 
 .about { background: var(--color-white); }
 
-.about-wrap {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 72px;
-  align-items: center;
+.about-purpose {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.about-photo {
-  position: relative;
-}
-
-.about-photo img {
-  width: 100%;
-  max-width: 360px;
-  border-radius: var(--radius-lg);
-  border: 3px solid var(--color-light);
-  box-shadow: var(--shadow-md);
-}
-
-.about-photo-stamp {
-  position: absolute;
-  bottom: -14px;
-  right: 24px;
-  background: var(--color-primary);
-  color: var(--color-white);
-  padding: 9px 17px;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  font-size: 14px;
-  box-shadow: var(--shadow-sm);
-  transform: rotate(-3deg);
-}
-.about-photo-stamp span { margin-left: 5px; }
-
-.about-text p {
+.about-purpose p {
+  font-size: 17.5px;
   color: var(--color-text);
-  font-size: 17px;
-  margin-bottom: 17px;
+  line-height: 1.75;
+  margin-bottom: 28px;
 }
 
 .badges {
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
-  margin-top: 24px;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 .badge {
   display: inline-block;
-  padding: 7px 14px;
+  padding: 8px 16px;
   background: var(--color-bg);
   border: 1px solid var(--color-light);
   border-radius: 20px;
   font-size: 13px;
   font-weight: 500;
   color: var(--color-secondary);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.badge:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* ============== HİZMETLER ============== */

@@ -13,7 +13,6 @@
 
   .cards { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
-  .about-wrap { gap: 48px; }
 }
 
 /* ============== TABLET ============== */
@@ -33,17 +32,6 @@
   }
 
   .hero { min-height: auto; padding: 120px 0 80px; }
-
-  .about-wrap {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: left;
-  }
-
-  .about-photo {
-    max-width: 280px;
-    margin: 0 auto;
-  }
 
   .contact-wrap {
     grid-template-columns: 1fr;
@@ -127,13 +115,6 @@
   .card { padding: 26px 22px; }
 
   .section-title { font-size: 26px; }
-
-  .about-photo-stamp {
-    right: 12px;
-    bottom: -10px;
-    font-size: 13px;
-    padding: 7px 14px;
-  }
 
   .contact-card {
     flex-wrap: wrap;

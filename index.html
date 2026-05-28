@@ -24,7 +24,7 @@
   <!-- Fontlar -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
   <link rel="stylesheet" href="assets/css/responsive.css?v=2" />
@@ -54,11 +54,11 @@
 
       <nav class="nav-links" id="nav-links" aria-label="Ana menü">
         <a href="#hero" class="nav-link" data-section="hero">Ana Sayfa</a>
-        <a href="#about" class="nav-link" data-section="about">Hakkımda</a>
+        <a href="#about" class="nav-link" data-section="about">Hakkımızda</a>
         <a href="#services" class="nav-link" data-section="services">Hizmetler</a>
         <a href="#projects" class="nav-link" data-section="projects">Projeler</a>
-        <a href="#why" class="nav-link" data-section="why">Neden Ben</a>
-        <a href="#contact" class="nav-cta">Bana Ulaş</a>
+        <a href="#why" class="nav-link" data-section="why">Neden Biz</a>
+        <a href="#contact" class="nav-cta">Bize Ulaşın</a>
       </nav>
 
       <button class="hamburger" id="hamburger" aria-label="Menüyü aç" aria-expanded="false">
@@ -80,13 +80,14 @@
             <em>taşıyan</em> yazılımlar.
           </h1>
           <p class="hero-sub">
-            ERP, satış, POS, restoran ve stok yönetimi sistemleriyle iş süreçlerinizi
-            sadeleştiriyor; her işletmenin kendi temposuna göre çalışan çözümler üretiyorum.
+            ERP, satış, POS, restoran, stok yönetimi ve kurumsal web siteleriyle
+            iş süreçlerinizi sadeleştiriyor; her işletmenin kendi temposuna göre
+            çalışan çözümler üretiyoruz.
           </p>
 
           <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">Projelerimi İncele</a>
-            <a href="#contact" class="btn btn-ghost">Bana Ulaş</a>
+            <a href="#projects" class="btn btn-primary">Projelerimizi İnceleyin</a>
+            <a href="#contact" class="btn btn-ghost">Bize Ulaşın</a>
           </div>
 
           <div class="hero-social" aria-label="Sosyal medya ve iletişim">
@@ -126,33 +127,26 @@
       </a>
     </section>
 
-    <!-- ============= HAKKIMDA ============= -->
+    <!-- ============= HAKKIMIZDA ============= -->
     <section class="section about" id="about">
-      <div class="container about-wrap">
-        <div class="about-photo">
-          <!-- TODO: gerçek profil fotoğrafı eklendiğinde aşağıdaki SVG değiştirilecek -->
-          <img src="assets/images/profile.svg" alt="SoftSharp profil görseli" />
-          <div class="about-photo-stamp">Merhaba <span>👋</span></div>
-        </div>
-
-        <div class="about-text">
-          <span class="eyebrow">Kimim Ben?</span>
-          <h2 class="section-title">Merhaba, ben <em>Soft#</em>.</h2>
-
-          <p>
-            On yılı aşkın süredir işletmeler için yazılım geliştiriyorum. ERP, POS,
-            satış ve stok yönetimi gibi alanlarda; küçük bir kafenin sipariş ekranından,
-            zincir mağazaların raporlama altyapısına kadar pek çok sistem kurdum.
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Hakkımızda</span>
+          <h2 class="section-title">İşletmenizin <em>dijital ekibi</em>.</h2>
+          <p class="section-lead">
+            Soft#, işletmelere özel yazılım çözümleri geliştiren bir yazılım ekibidir.
+            ERP'den POS'a, restoran yönetiminden kurumsal web sitelerine kadar; her
+            projeyi sıfırdan, sizin iş süreçlerinizi anlayarak kuruyoruz.
           </p>
+        </header>
+
+        <div class="about-purpose">
           <p>
-            İşim hazır şablon sunmak değil, sizinle konuşmak, süreçlerinizi anlamak ve
-            <em>tam</em> ihtiyacınız olan şeyi yazmak. Çünkü her işletmenin ritmi farklı —
-            yazılımın da o ritme uyması gerekir.
-          </p>
-          <p>
-            Karmaşık görünen sistemleri sade tutmaya, raporları gerçekten kullanılabilir
-            yapmaya ve teknik olmayan ekiplerin de rahatça öğrenebileceği arayüzler
-            kurmaya özen gösteriyorum.
+            Amacımız sade: <em>hazır şablon değil</em>, gerçekten işinize yarayan
+            yazılımlar üretmek. Çünkü her işletmenin ritmi farklı; yazılım da o ritme
+            uymalı. Karmaşık görünen sistemleri sade tutmaya, raporları kullanılabilir
+            yapmaya ve teknik olmayan ekiplerin bile rahatça öğrenebileceği arayüzler
+            kurmaya özen gösteriyoruz.
           </p>
 
           <div class="badges">
@@ -160,7 +154,8 @@
             <span class="badge">Satış Sistemleri</span>
             <span class="badge">POS</span>
             <span class="badge">Restoran Yazılımı</span>
-            <span class="badge">Stok & Muhasebe</span>
+            <span class="badge">Stok &amp; Muhasebe</span>
+            <span class="badge">Kurumsal Web Sitesi</span>
           </div>
         </div>
       </div>
@@ -236,12 +231,23 @@
 
           <article class="card">
             <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="card-title">Kurumsal Web Sitesi</h3>
+            <p class="card-desc">
+              Markanızı hak ettiği gibi sunan, hızlı yüklenen ve mobil uyumlu kurumsal
+              web siteleri. SEO, içerik yönetimi ve isterseniz e-ticaret entegrasyonu dahil.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <h3 class="card-title">Özel Geliştirme</h3>
             <p class="card-desc">
               Yukarıdakilerin dışındaki ihtiyaçlarınız için sıfırdan, işinize özel
-              yazılım geliştirme. Konuşalım, çözelim.
+              yazılım geliştiriyoruz. Konuşalım, birlikte çözelim.
             </p>
           </article>
         </div>
@@ -253,7 +259,7 @@
       <div class="container">
         <header class="section-head">
           <span class="eyebrow">Portfolyo</span>
-          <h2 class="section-title">Geliştirdiğim sistemler</h2>
+          <h2 class="section-title">Geliştirdiğimiz sistemler</h2>
           <p class="section-lead">
             Her biri gerçek bir işletme için, gerçek bir ihtiyaca çözüm olarak yazıldı.
             Detayları görmek için bir projeye tıklayın.
@@ -332,15 +338,33 @@
               <button class="project-link" type="button">Projeyi İncele →</button>
             </div>
           </article>
+
+          <article class="project-card" data-project="web">
+            <div class="project-thumb">
+              <img src="assets/images/projects/web-1.svg" alt="Kurumsal web sitesi görseli" loading="lazy" />
+              <span class="project-tag">Web</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-name">Kurumsal Web Sitesi</h3>
+              <p class="project-desc">
+                Üretim firması için sıfırdan tasarlanmış kurumsal site: hızlı yükleme,
+                mobil uyumluluk, çoklu dil desteği ve içerik yönetim paneli.
+              </p>
+              <div class="project-tech">
+                <span>Next.js</span><span>TailwindCSS</span><span>Headless CMS</span>
+              </div>
+              <button class="project-link" type="button">Projeyi İncele →</button>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ============= NEDEN BEN ============= -->
+    <!-- ============= NEDEN BİZ ============= -->
     <section class="section why" id="why">
       <div class="container">
         <header class="section-head">
-          <span class="eyebrow">Neden Ben?</span>
+          <span class="eyebrow">Neden Biz?</span>
           <h2 class="section-title">Farkı yaratan birkaç şey</h2>
         </header>
 
@@ -351,8 +375,8 @@
             </div>
             <h3>Kişiselleştirilmiş Çözümler</h3>
             <p>
-              Hazır şablon yerine sizin işinize özel yazılımlar geliştiriyorum.
-              Her detay konuşularak kararlaştırılır.
+              Hazır şablon yerine sizin işinize özel yazılımlar geliştiriyoruz.
+              Her detay birlikte konuşularak kararlaştırılır.
             </p>
           </div>
 
@@ -401,7 +425,7 @@
             <h2 class="section-title light">Bir kahve içip<br />konuşalım mı?</h2>
             <p class="contact-lead">
               Projeniz fikir aşamasında olsun ya da çoktan başlamış — bir mesaj atın,
-              size dönerim. İlk görüşme her zaman ücretsizdir.
+              size dönüş yapalım. İlk görüşme her zaman ücretsizdir.
             </p>
           </div>
 
@@ -463,12 +487,12 @@
         <span class="brand">
           <span class="brand-mark">Soft</span><span class="brand-hash">#</span>
         </span>
-        <p>Özel yazılım çözümleri — işletmenize özel, sade ve dayanıklı.</p>
+        <p>Özel yazılım çözümleri — işletmenize özel, sade ve dayanıklı sistemler.</p>
       </div>
 
       <nav class="footer-links" aria-label="Footer menü">
         <a href="#hero">Ana Sayfa</a>
-        <a href="#about">Hakkımda</a>
+        <a href="#about">Hakkımızda</a>
         <a href="#services">Hizmetler</a>
         <a href="#projects">Projeler</a>
         <a href="#contact">İletişim</a>

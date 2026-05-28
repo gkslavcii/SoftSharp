@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- TODO: Kurumsal web sitesi gerçek ekran görüntüsüyle değiştirilecek -->
+  <defs>
+    <linearGradient id="webBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a2a4f"/>
+      <stop offset="100%" stop-color="#001F3F"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#webBg)"/>
+
+  <!-- Tarayıcı çubuğu -->
+  <rect x="40" y="30" width="720" height="40" rx="8" fill="#fff" opacity="0.1"/>
+  <circle cx="60" cy="50" r="6" fill="#ff5f57"/>
+  <circle cx="80" cy="50" r="6" fill="#febc2e"/>
+  <circle cx="100" cy="50" r="6" fill="#28c840"/>
+  <rect x="130" y="42" width="600" height="16" rx="4" fill="#fff" opacity="0.18"/>
+
+  <!-- Site içerik alanı -->
+  <rect x="40" y="80" width="720" height="340" rx="8" fill="#fff" opacity="0.05"/>
+
+  <!-- Nav -->
+  <rect x="60" y="100" width="80" height="14" rx="3" fill="#fff" opacity="0.85"/>
+  <g transform="translate(440, 102)">
+    <rect width="50" height="10" rx="2" fill="#fff" opacity="0.5"/>
+    <rect x="65" width="55" height="10" rx="2" fill="#fff" opacity="0.5"/>
+    <rect x="135" width="50" height="10" rx="2" fill="#fff" opacity="0.5"/>
+    <rect x="200" y="-4" width="80" height="20" rx="4" fill="#4ade80"/>
+  </g>
+
+  <!-- Hero başlık -->
+  <rect x="60" y="160" width="80" height="9" rx="2" fill="#4ade80"/>
+  <rect x="60" y="185" width="420" height="22" rx="4" fill="#fff" opacity="0.9"/>
+  <rect x="60" y="215" width="320" height="22" rx="4" fill="#fff" opacity="0.9"/>
+  <rect x="60" y="255" width="380" height="10" rx="2" fill="#fff" opacity="0.55"/>
+  <rect x="60" y="275" width="340" height="10" rx="2" fill="#fff" opacity="0.55"/>
+  <rect x="60" y="310" width="130" height="32" rx="6" fill="#4ade80"/>
+  <rect x="205" y="310" width="130" height="32" rx="6" fill="none" stroke="#fff" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- Hero görsel -->
+  <rect x="510" y="160" width="220" height="200" rx="10" fill="#fff" opacity="0.12"/>
+  <rect x="525" y="180" width="80" height="9" rx="2" fill="#fff" opacity="0.6"/>
+  <rect x="525" y="200" width="190" height="120" rx="6" fill="#fff" opacity="0.18"/>
+  <circle cx="620" cy="260" r="22" fill="#4ade80" opacity="0.85"/>
+  <polygon points="615,250 615,270 632,260" fill="#fff"/>
+
+  <!-- Alt kartlar -->
+  <g transform="translate(60, 370)">
+    <rect width="200" height="30" rx="6" fill="#fff" opacity="0.08"/>
+    <rect x="215" width="200" height="30" rx="6" fill="#fff" opacity="0.08"/>
+    <rect x="430" width="200" height="30" rx="6" fill="#fff" opacity="0.08"/>
+  </g>
+</svg>

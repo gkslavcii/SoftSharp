@@ -66,7 +66,7 @@
 
   /* ---------- Reveal animasyonu ---------- */
   const revealTargets = document.querySelectorAll(
-    '.section-head, .card, .project-card, .why-item, .about-photo, .about-text, .hero-content, .contact-card, .contact-text'
+    '.section-head, .card, .project-card, .why-item, .about-purpose, .hero-content, .contact-card, .contact-text'
   );
 
   revealTargets.forEach(el => el.classList.add('reveal'));
@@ -97,8 +97,8 @@
     erp: {
       tag: 'ERP',
       title: 'Üretim ERP Paneli',
-      intro: 'Orta ölçekli bir üretim firması için sıfırdan tasarlanan, stok, satınalma, maliyet ve müşteri modüllerini tek panelden yöneten bütünleşik bir ERP çözümü.',
-      story: 'Firma yıllardır birbirinden kopuk Excel dosyaları ve eski bir muhasebe programıyla çalışıyordu. Aynı stoğu üç farklı yerde takip ediyor, sipariş geldiğinde kim ne yapacak bilemiyordu. Tüm süreci masaya yatırdık; üretim akışından raporlamaya kadar herşeyi tek bir panelde topladık.',
+      intro: 'Orta ölçekli bir üretim firması için sıfırdan tasarladığımız, stok, satınalma, maliyet ve müşteri modüllerini tek panelden yöneten bütünleşik ERP çözümü.',
+      story: 'Firma yıllardır birbirinden kopuk Excel dosyaları ve eski bir muhasebe programıyla çalışıyordu. Aynı stoğu üç farklı yerde takip ediyor, sipariş geldiğinde kim ne yapacak bilemiyordu. Tüm süreci masaya yatırdık; üretim akışından raporlamaya kadar her şeyi tek bir panelde topladık.',
       features: [
         'Çoklu depo stok takibi, otomatik kritik seviye uyarıları',
         'Satınalma talep → onay → tedarikçi akışı',
@@ -113,7 +113,7 @@
       tag: 'POS',
       title: 'Hızlı POS Kasa',
       intro: 'Dokunmatik ekrana göre optimize edilmiş, internet kesintilerinde bile sorunsuz çalışan, hızlı ve sade bir kasa yazılımı.',
-      story: 'Müşterinin asıl şikâyeti hızdı: yoğun saatlerde kasa donuyor, müşteri kuyrukta bekliyordu. Ekranı sıfırdan tasarladık, en sık kullanılan işlemleri tek dokunuşa indirdik. İnternet kesilince çevrimdışı moda otomatik geçen, bağlantı geldiğinde sessizce senkronize olan bir yapı kurduk.',
+      story: 'Müşterimizin asıl şikâyeti hızdı: yoğun saatlerde kasa donuyor, müşteri kuyrukta bekliyordu. Ekranı sıfırdan tasarladık, en sık kullanılan işlemleri tek dokunuşa indirdik. İnternet kesilince çevrimdışı moda otomatik geçen, bağlantı geldiğinde sessizce senkronize olan bir yapı kurduk.',
       features: [
         'Tam çevrimdışı çalışabilme — kesintilerde satış durmaz',
         'Barkod okuyucu, terazi ve fiş yazıcı entegrasyonu',
@@ -128,7 +128,7 @@
       tag: 'Restoran',
       title: 'Restoran Adisyon & Mutfak',
       intro: 'Masa takibi, garson tabletleri ve mutfak ekranlarıyla entegre çalışan, küçük zincirlere kadar ölçeklenebilen restoran yönetim sistemi.',
-      story: 'İlk müşteri tek şubeli bir restorandı; üç ay sonra üçüncü şubelerini açtılar. Sistemi başından çok kiracılı tasarladığımız için yeni şube açmak yalnızca ekleme işlemiydi. Garson tabletinden alınan sipariş anında mutfak ekranında belirir, hazırlanma süresi otomatik tutulur.',
+      story: 'İlk müşterimiz tek şubeli bir restorandı; üç ay sonra üçüncü şubelerini açtılar. Sistemi başından çok kiracılı tasarladığımız için yeni şube açmak yalnızca ekleme işlemiydi. Garson tabletinden alınan sipariş anında mutfak ekranında beliriyor, hazırlanma süresi otomatik tutuluyor.',
       features: [
         'Masa, bölge ve katlı oturma düzeni yönetimi',
         'Garson tablet uygulaması (Android/iOS)',
@@ -143,7 +143,7 @@
       tag: 'Stok',
       title: 'Gerçek Zamanlı Stok Takibi',
       intro: 'Birden fazla depo ve şube arasında stok hareketlerini gerçek zamanlı izleyen, barkod desteğiyle hata payını sıfıra yaklaştıran sistem.',
-      story: 'Müşterinin en büyük problemi "gerçekten ne kadar stoğum var?" sorusuydu. Manuel sayımlar her zaman üç-beş kalem hatalı çıkıyordu. Sisteme her hareketi anında işleyen ve depoları birbirine bağlayan bir omurga koyduk. Düşük stok uyarıları otomatik tedarikçiye dönüşüyor.',
+      story: 'Müşterimizin en büyük problemi "gerçekten ne kadar stoğum var?" sorusuydu. Manuel sayımlar her zaman üç-beş kalem hatalı çıkıyordu. Sisteme her hareketi anında işleyen ve depoları birbirine bağlayan bir omurga koyduk. Düşük stok uyarıları otomatik tedarikçi siparişine dönüşüyor.',
       features: [
         'Çoklu depo / şube arası transfer takibi',
         'Barkod ve QR ile hızlı giriş-çıkış',
@@ -153,6 +153,21 @@
         'Muhasebe yazılımı entegrasyonu'
       ],
       tech: ['Next.js', 'Prisma', 'PostgreSQL', 'TypeScript']
+    },
+    web: {
+      tag: 'Web',
+      title: 'Kurumsal Web Sitesi',
+      intro: 'Üretim sektöründe faaliyet gösteren bir firma için sıfırdan tasarlanan, çoklu dil destekli ve içerik yönetim paneli olan modern kurumsal web sitesi.',
+      story: 'Firmanın eski sitesi mobil uyumsuz, yavaş ve içerik güncelleme için her seferinde geliştiriciye bağımlıydı. Sıfırdan, performans öncelikli bir mimari kurduk. Pazarlama ekibi artık panelden ürün, referans ve kampanya içeriklerini kendisi güncelliyor; site bir saniyenin altında yükleniyor.',
+      features: [
+        'Mobile-first responsive tasarım, %100 mobil uyumluluk',
+        'Lighthouse performans skoru 95+ — ilk yüklenme 1 sn altı',
+        'İçerik yönetim paneli (CMS) — geliştiriciye bağımlılığı bitirir',
+        'Çoklu dil desteği (TR/EN) ve SEO-uyumlu URL yapısı',
+        'İletişim formu, harita ve sosyal medya entegrasyonları',
+        'Google Analytics ve Search Console hazır kurulumu'
+      ],
+      tech: ['Next.js', 'TailwindCSS', 'TypeScript', 'Headless CMS']
     }
   };
 
