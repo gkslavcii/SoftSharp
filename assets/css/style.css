@@ -18,6 +18,7 @@
   /* Tipografi */
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-brand: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* Yumuşak geçişler — "elle ayarlanmış" hisli değerler */
   --transition: 0.28s cubic-bezier(0.32, 0.72, 0.34, 1);
@@ -152,58 +153,51 @@ em { font-style: italic; color: var(--color-primary); }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 14px;
   height: 72px;
 }
 
 .brand {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 30px;
+  font-family: var(--font-brand);
+  font-weight: 500;
+  font-size: 28px;
   color: var(--color-primary);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.035em;
   display: inline-flex;
   align-items: baseline;
+  line-height: 1;
 }
 
-/* "Soft" — ince, zarif serif (Playfair) */
+/* "Soft" — Manrope medium, sade ve dengeli */
 .brand-mark {
-  font-family: var(--font-heading);
   color: var(--color-secondary);
-  font-weight: 400;
-  letter-spacing: 0;
+  font-weight: 500;
 }
 
-/* "#" — italik, sans-serif (Inter). Playfair'in # glifi serifçe ince
-   olduğu için sans-serif ailesine geçiyoruz; italik + 800 ağırlık ile
-   logo karakteri oluşuyor. */
+/* "#" — aynı aile, kalın ağırlık, biraz büyütülmüş — logo vurgusu */
 .brand-hash {
-  font-family: var(--font-body);
   color: var(--color-primary);
   font-weight: 800;
-  font-style: italic;
-  font-size: 1.3em;
-  margin-left: 3px;
-  line-height: 0.9;
-  letter-spacing: -0.05em;
-  /* Optik düzeltme: # baseline'da biraz aşağıda durur, hizayı korumak için */
-  position: relative;
-  top: 1px;
+  font-size: 1.15em;
+  margin-left: 1px;
+  letter-spacing: -0.06em;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 28px;
+  margin-left: auto; /* nav-social'ı sağa iter */
 }
 
-/* Navbar içindeki iletişim ikonları */
+/* Navbar içindeki iletişim ikonları — masaüstünde menü ile CTA arasında,
+   mobilde brand ile hamburger arasında her zaman görünür */
 .nav-social {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding-left: 12px;
+  padding-left: 14px;
   border-left: 1px solid var(--color-light);
-  margin-left: 4px;
 }
 
 .nav-icon {

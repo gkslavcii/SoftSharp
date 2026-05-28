@@ -88,24 +88,19 @@
     padding: 14px 22px;
   }
 
-  /* Mobil menüde sosyal ikonlar yatay sıra, ortalı */
+  /* Mobilde nav-social hala navbar'da görünür — Soft# ile hamburger arasında */
   .nav-social {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    padding: 14px 0 0;
+    padding-left: 0;
     border-left: none;
-    border-top: 1px solid var(--color-light);
-    margin: 6px 0 0;
+    gap: 2px;
   }
 
   .nav-icon {
-    width: 42px;
-    height: 42px;
-    border: 1px solid var(--color-light);
+    width: 36px;
+    height: 36px;
   }
 
-  .nav-icon svg { width: 18px; height: 18px; }
+  .nav-icon svg { width: 16px; height: 16px; }
 }
 
 /* ============== MOBILE ============== */
